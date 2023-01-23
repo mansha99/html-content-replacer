@@ -1,0 +1,433 @@
+<h2 class="shala-mf-page-editor_ck-heading1"><strong>3D6. [11] Redesign Circle Settings Panel</strong></h2>
+<p>&nbsp;</p>
+<h3 class="shala-mf-page-editor_ck-heading2">A. New Design</h3>
+<p><a
+        href="https://www.figma.com/file/52P8noa5knbxPWTHAbhspi/UI%3A-SHALA">https://www.figma.com/file/52P8noa5knbxPWTHAbhspi/UI%3A-SHALA</a>
+</p>
+<p>&nbsp;</p>
+<ul class="todo-list">
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span
+                class="todo-list__label__description">A1. Update design based on figma file and map functionality to
+                this new design</span></label></li>
+</ul>
+<p>&nbsp;</p>
+<figure class="image"><img src="https://shala.us/backend/public/assets/images/circles/1671399763.png"></figure>
+<p>&nbsp;</p>
+<h4 class="shala-mf-page-editor_ck-heading3">B. Bugfixes and Improvements</h4>
+<p>Please use <strong>sandbox</strong>.shala.us for all testing (note: it is not Sandbox<strong>d </strong>but
+    Sandbox.&nbsp;<br>Use the following user accounts for testing and fixing errors</p>
+<ul>
+    <li><a href="mailto:steward@shala.us">steward@shala.us</a> (pw: roman) has owner access, <a
+            class="shala-mf-ckeditor__mention" data-mention="1522" data-user-id="1522"
+            href="https://www.www.shala.us/dashboard/connections/connection/1522">@Shala Steward</a> &nbsp;userId:
+        1522</li>
+    <li><a href="mailto:steward@shala.us">admin@shala.us</a> (pw: roman) has admin access, <a
+            class="shala-mf-ckeditor__mention" data-mention="1523" data-user-id="1523"
+            href="https://www.www.shala.us/dashboard/connections/connection/1523">@Shala Admin</a> userId: 1523</li>
+    <li><a href="mailto:steward@shala.us">creator@shala.us</a> (pw: roman) has creator access, <a
+            class="shala-mf-ckeditor__mention" data-mention="1524" data-user-id="1524"
+            href="https://www.www.shala.us/dashboard/connections/connection/1524">@Shala Creator</a> &nbsp;userId:
+        1524</li>
+    <li><a href="mailto:steward@shala.us">member@shala.us</a> (pw: roman) has member access, <a
+            class="shala-mf-ckeditor__mention" data-mention="1525" data-user-id="1525"
+            href="https://www.www.shala.us/dashboard/connections/connection/1525">@Shala Member</a> &nbsp;userId:
+        1525<br>&nbsp;</li>
+</ul>
+<ul class="todo-list">
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B1. When I login as <a
+                    href="mailto:member@shala.us">member@shala.us</a> on sandbox.shala.us, I can see invisible and
+                restricted circles<br><br>See below Shala Member's user access rights</span></label></li>
+</ul>
+<figure class="image"><img src="https://shala.us/backend/public/assets/images/circles/1671574843.png"></figure>
+<p>&nbsp;</p>
+<p>See below the issue we are seeing. Shala Member can see all the invisible and restricted circles. WE FIXED THIS
+    SEVERAL TIMES! When we fix this, we break the child circles not visible inside closed circles rule. When we fix
+    that, we break this. Please look into his carefully.<br>&nbsp;</p>
+<figure class="image"><img src="https://shala.us/backend/public/assets/images/circles/1671574962.png"></figure>
+<p>&nbsp;</p>
+<ul class="todo-list">
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B2. When i am creating circles, they are being created with
+                publishStatus = 0 (unpublished). The default status should always be 1 (Published)</span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B3. When someone types the wrong subdomain URL (one that does
+                not exist), we still open a page that has no logo and let people login. This is confusing. If users
+                enter a wrong subdomain, we should show the error message - This page does not exist. Go to Shala. The
+                Shala link should take them to shala.us</span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B4. When a new platform is created, we are using the wrong
+                spelling for platform - See below it is plateform. Please correct this to platform.<br><img
+                    src="https://shala.us/backend/public/assets/images/circles/1671575194.png"></span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B5. When I login to fraendi.shala.us as <a
+                    href="mailto:roman@evolvia.us">roman@evolvia.us</a> (pw: Unique7%), I am not seeing any circles.
+                Please check this.<br><br><img
+                    src="https://shala.us/backend/public/assets/images/circles/1671575259.png"><br>&nbsp;</span></label>
+    </li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B6. On an user profile page, when I click the Follow button,
+                nothing happens:<br><br><img
+                    src="https://shala.us/backend/public/assets/images/circles/1671575331.png"></span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B8. (Formerly 3C9. H14.) The icon on top of the window is still
+                fixed to the same shala icon. It must be the circle thumbnnail of the platform's primary circle. The
+                only time it works correctly is when we click on user's profile. <strong>We must also show the number of
+                    notifications here.</strong><br><br>This is still an issue. Also, the name shala.us is shown as
+                title for browser if the user is on user admin panel or our network etc.&nbsp;</span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B9. If a circle is closed, a non-member should not be able to
+                see the children even if its a linked circle<br><br><img
+                    src="https://shala.us/backend/public/assets/images/circles/1671721774.png"></span></label></li>
+</ul>
+<h3 class="shala-mf-page-editor_ck-heading2"><br>SEE FIGMA FILE HERE: <a
+        href="https://www.figma.com/file/52P8noa5knbxPWTHAbhspi/UI%3A-SHALA?node-id=3993%3A60133&amp;t=eF8lmIZad3f3YAZk-1">https://www.figma.com/file/52P8noa5knbxPWTHAbhspi/UI%3A-SHALA?node-id=3993%3A60133&amp;t=eF8lmIZad3f3YAZk-1</a>
+</h3>
+<p>FOR THE BELOW, PLEASE REFER TO FIGMA FILE ABOVE</p>
+<ul class="todo-list">
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span
+                class="todo-list__label__description">B10. Fix the shadow issue with first user icon&nbsp;<br>PLEASE
+                REFER TO FIGMA FILE ABOVE<br><br><img
+                    src="https://api.shala.us/assets/images/circles/1672610143.png"><br><br><span
+                    style="color:hsl(0,75%,60%);"><strong>UPDATE</strong></span>: The updated version still appears to
+                be inconsitent in design with the figma. The last grey icon is larger than the
+                avatars.<br>&nbsp;</span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B11. Make spacing between rows the same, increase if necessary,
+                to make it the same as the rows with user and circle icons</span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B12. Circle hosts: Show the parent circle as the first circle
+                host. The other circle hosts are from circles_circles table</span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B13. Contributors: Contributors are all users with user access
+                level owner, admin and creator</span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span
+                class="todo-list__label__description">B14. Add the triple dot menu icon on&nbsp;</span></label>
+        <ul class="todo-list">
+            <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                        class="todo-list__label__description">B14a. Top of the settings
+                        panel as shown</span></label></li>
+            <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                        class="todo-list__label__description">B14b. On the side of the menu
+                        item the user is hovering on, as shown<br><br><img
+                            src="https://api.shala.us/assets/images/circles/1673213734.png"><br>If the loggedin user
+                        is owner, the user will see 4 options as shown: Add circle, Copy Circle, Move Circle and Remove
+                        Circle<br><br>If the loggedin user is admin or creator, the user will see 3 options: Add circle,
+                        Copy circle and Leave circle (NOT Remove Circle)<br><br>If the loggedin user is member, the user
+                        will see 2 options: Copy circle and Leave circle (NOT Remove circle)<br><br>The functionality
+                        for add circle, remove circle and leave circle should work exactly as it was before. We will
+                        specify the functionality for the other options soon.<br><br><img
+                            src="https://api.shala.us/assets/images/circles/1672610797.png"></span></label></li>
+        </ul>
+    </li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span
+                class="todo-list__label__description">B14c. <span
+                    style="color:hsl(0,75%,60%);"><strong>UPDATE</strong></span>: If a user does not have any form of
+                access to a circle, do not show the 3 dot icon at all.&nbsp;</span></label></li>
+</ul>
+<figure class="image"><img src="https://api.shala.us/assets/images/circles/1673294591.png"></figure>
+<ul class="todo-list">
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B15. Change the design for the header path and make it as shown
+                in figma file - Space in between and user icons. Everything else should work the same<br><br><img
+                    src="https://api.shala.us/assets/images/circles/1672611156.png"></span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B16. Replace the drop down icon at the end of the header path
+                with a setting icon button on left of the Share button. When user clicks this button, the settings panel
+                opens.<br><br>Please change the background. The current background is only for hovering.<br><br><br><img
+                    src="https://api.shala.us/assets/images/circles/1672611244.png"></span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B17. Remove the circles icons from the top right header (next to
+                the user icons)</span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span
+                class="todo-list__label__description">B18. Add a line 'Add description here' for the description of
+                the circle if it is empty. By default, when a new circle is created, the default description must be an
+                empty string. The 'Add description here' is a link for user to click. When user clicks it, the link
+                disappears and the cursor is placed at the beginning for the user to start typing.&nbsp;<br><br>'Add
+                description here' is only shown to owners and admins. Others will see empty line.</span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span
+                class="todo-list__label__description">B19. Please add Tulas number with % in braces (Ask Max about
+                this on Tuesday)<br><span style="color:hsl(0,75%,60%);"><strong>UPDATE</strong></span>: We need to
+                calculate user Tulas and total Tulas<br><strong>TotalTulas</strong> is the sum of all tulas in
+                tulas_circles for a given circleId&nbsp;<br><strong>UserTulas</strong> is the tulas in tulas_circles for
+                a given circleId and userId&nbsp;</span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B20. There is no border between the side menu and the settings
+                panel. Please fix.<br><br><img
+                    src="https://api.shala.us/assets/images/circles/1672705143.png"></span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B21. Please user circular avatars for circle hosts and place
+                them above Contributors.</span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B22. When owner clicks 'Move circle', open the pop up window
+                shown below and allow owner to select any circle that they are also an owner, admin or creator of. if
+                they are only a member, that circle will be grey and not selectable.<br><br>SEE FIGMA FILE HERE: <a
+                    href="https://www.figma.com/file/52P8noa5knbxPWTHAbhspi/UI%3A-SHALA?node-id=3993%3A60133&amp;t=eF8lmIZad3f3YAZk-1">https://www.figma.com/file/52P8noa5knbxPWTHAbhspi/UI%3A-SHALA?node-id=3993%3A60133&amp;t=eF8lmIZad3f3YAZk-1</a><br><br><img
+                    src="https://api.shala.us/assets/images/circles/1672704886.png"></span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B23. When any user clicks 'Copy Circle' open the following
+                pop-up window<br>SEE FIGMA FILE HERE: <a
+                    href="https://www.figma.com/file/52P8noa5knbxPWTHAbhspi/UI%3A-SHALA?node-id=3993%3A60133&amp;t=eF8lmIZad3f3YAZk-1">https://www.figma.com/file/52P8noa5knbxPWTHAbhspi/UI%3A-SHALA?node-id=3993%3A60133&amp;t=eF8lmIZad3f3YAZk-1</a><br><br>Only
+                owners will see the row 'Copy Circle'.&nbsp;<br>Owners and admins will see the row 'Create
+                Instance'<br>All users will see the row 'Copy Template'<br><br><img
+                    src="https://api.shala.us/assets/images/circles/1672705288.png"></span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span
+                class="todo-list__label__description">B24. <strong>CREATE INSTANCE</strong> - When an owner or admin
+                clicks create instance, they can select a new circle host for the circle. Please show the same pop-up
+                window as the Move circle pop-up window as in B22. They can only select a circle that they are owner,
+                admin or creator of. An entry is added to circles_circles<br>BUGFIX: This does not work anymore: See
+                screenshot video <a
+                    href="https://www.awesomescreenshot.com/video/13840915?key=ee250191bf1343add8d106db152fc849">https://www.awesomescreenshot.com/video/13840915?key=ee250191bf1343add8d106db152fc849</a></span></label>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul class="todo-list">
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span
+                class="todo-list__label__description">B25. <strong>COPY CIRCLE</strong> - When an owner clicks copy
+                circle, they can select a circle host for a new circle (with circle selection pop-up window) that will
+                have a copy of all the content - The content is also copied (with new contentIds and circle_contentIds,
+                programPrevious, programNext, PagePrevious, PageNext)<br><span
+                    style="color:hsl(0,75%,60%);"><strong>BUGFIX</strong></span>: THIS DOES NOT WORK
+                CORRECTLY<br>&nbsp;</span></label>
+        <ul class="todo-list">
+            <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span
+                        class="todo-list__label__description">B25a, We copied Circle Template 1 to Sandbox. A new
+                        circle 448 was created. This should have had the name 'Circle Template 1 - Copy'</span></label>
+            </li>
+            <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span
+                        class="todo-list__label__description">B25b. On copying, we should directly go to the circle
+                        with settings panel open</span></label></li>
+            <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span
+                        class="todo-list__label__description">B25c. We should not show the alert message as in
+                        B27</span></label></li>
+            <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span
+                        class="todo-list__label__description">B25d. We should copy the banner and other items in
+                        circle_meta and content_meta - It was not copied.<br>&nbsp;</span></label></li>
+        </ul>
+    </li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span
+                class="todo-list__label__description">B26. <strong>COPY TEMPLATE</strong> - Create a copy of the
+                circle (just like B25) but replace the text with random text with the same number of characters, and
+                images with black space with same dimensions, and content with the no attached file (video, audio, PDF,
+                download, storymatcher)</span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span
+                class="todo-list__label__description">B27. Do not ask user to refresh the page - Please refresh the
+                circle positions after the copying or moving circle action is completed.&nbsp;<br><img
+                    src="https://api.shala.us/assets/images/circles/1673212249.png"></span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B28. Whenever I click a circle on the side menu and we load the
+                circle page, I lose the location on the side menu (it refreshes to default with only parent circles). I
+                have to renavigate on the side menu again. Can we avoid this so user can still see the side menu
+                item?<br>For example, if I navigate to a ticket Developers &gt; Development Board &gt; 3D6. [11]
+                Redesign Circle Settings Panel and click on that ticket on the side menu, the ticket loads and the side
+                menu goes back to default. Please keep the side menu open to show the selected circle.&nbsp;<br><img
+                    src="https://api.shala.us/assets/images/circles/1673212357.png"></span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B29. Do not save text in HTML format for Circle Name. Once user
+                accidentally copies HTML text to the name, it cannot be undone.<img
+                    src="https://api.shala.us/assets/images/circles/1673211884.png"><br>&nbsp;</span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B30. The width of the side menu and the height of the header is
+                too big when compared to the figma file. Also the fonts are not the right ones. Please fix this.<br><a
+                    href="https://www.figma.com/file/52P8noa5knbxPWTHAbhspi/UI%3A-SHALA?node-id=3993%3A60133&amp;t=7C8Q3qpGSCvKdf4H-1">https://www.figma.com/file/52P8noa5knbxPWTHAbhspi/UI%3A-SHALA?node-id=3993%3A60133&amp;t=7C8Q3qpGSCvKdf4H-1</a></span></label>
+    </li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B31. Please add a search bar under the top left logo<br><br><img
+                    src="https://api.shala.us/assets/images/circles/1673212767.png"></span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B32. There is a bug with add circle on the new menu. The action
+                works correctly when we click 'Create new circle' under circles in the list of settings panel. However,
+                when we click 'Add circle' from the 3 dot menu, it does not work. Screen goes blank or circle gets
+                created in wrong location.</span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span
+                class="todo-list__label__description">B33. See bugs below:</span></label>
+        <ul class="todo-list">
+            <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                        class="todo-list__label__description">B33a. The user admin panel
+                        design for tabs is messed up again</span></label>
+                <ul class="todo-list">
+                    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span
+                                class="todo-list__label__description">B33b. Stephanie's access rights for this circle
+                                (it is a wiki page) must owner because she is owner of the parent circle. However, she
+                                is not. Can you please check?<br>Max is recognizing Stephanie as owner and allowing her
+                                to edit the circle page. However on the circle settings panel, she is a
+                                non-member.&nbsp;&nbsp;<br><br><img
+                                    src="https://api.shala.us/assets/images/circles/1673266001.png"></span></label>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B34. I am not able to change a circle from invisible circle to
+                open page or closed circle<br><a
+                    href="https://www.awesomescreenshot.com/video/13840757?key=bb8fa1df589adfaf7f30076084266a6a">https://www.awesomescreenshot.com/video/13840757?key=bb8fa1df589adfaf7f30076084266a6a</a></span></label>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<ul class="todo-list">
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B35. I am not a member of this circle, yet I am able to edit the
+                description. The only access rights able to modify the description are owners and admins. Creators,
+                members, and non-member should not be able to edit a circle description .</span></label></li>
+</ul>
+<figure class="image"><img src="https://api.shala.us/assets/images/circles/1673295068.png"></figure>
+<p>&nbsp;</p>
+<ul class="todo-list">
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span
+                class="todo-list__label__description">B36. Certain information should show in the settings panel, even
+                if a user does not have any access rights to the circle. [To be continued]</span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B37. Can you please remove this space? And reduce the width of
+                the side menu and the height of the top header both by 20% ? Our side menu width and top header height
+                should match Notion. Or at least be the same as our new figma file<br><br><img
+                    src="https://api.shala.us/assets/images/circles/1673390315.png"></span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span
+                class="todo-list__label__description">B38. The font and color of the side menu should also match our
+                figma file&nbsp;<br><img src="https://api.shala.us/assets/images/circles/1673390380.png"></span></label>
+        <ul class="todo-list">
+            <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                        class="todo-list__label__description">a. Change to 14 pt font size
+                        of side menu and header bar</span></label></li>
+            <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                        class="todo-list__label__description">b. Reduce line spacing to
+                        match Notion</span></label></li>
+            <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                        class="todo-list__label__description">c. Reduce character count so
+                        that menu will stay in one line</span></label></li>
+            <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                        class="todo-list__label__description">d. Reduce search bar
+                        size</span></label></li>
+            <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                        class="todo-list__label__description">e. Reduce width of side menu
+                        to same as Notion</span></label></li>
+            <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                        class="todo-list__label__description">f. Reduce font size of header
+                        path to 14 pt (Developers &gt; Developme....)</span></label></li>
+            <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                        class="todo-list__label__description">g. Reduce height of header to
+                        same as Notion</span></label></li>
+            <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                        class="todo-list__label__description">h. Move the header path to the
+                        left (we did not move it after reducing the width of the side menu)</span></label></li>
+            <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span
+                        class="todo-list__label__description">i. Put the breadcrumbs to where it was before (this was
+                        missed by Merehan and should not have been changed). Also, Fix the height issue of logo frame on
+                        public pages<br><img
+                            src="https://api.shala.us/assets/images/circles/1673556612.png"></span></label></li>
+        </ul>
+    </li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span
+                class="todo-list__label__description">B39. When we click 'Add circle', the menu sometimes moves to the
+                top left. Also when we add the circle, the settings panel is no longer shown as default<br><a
+                    href="https://www.awesomescreenshot.com/video/13947046?key=69b216df18f086f9ee7a99474d1b87a4">https://www.awesomescreenshot.com/video/13947046?key=69b216df18f086f9ee7a99474d1b87a4</a></span></label>
+    </li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B40. Please remove this background from settings (this is
+                supposed to show only when hovering)<br><img
+                    src="https://api.shala.us/assets/images/circles/1673556452.png"></span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B41. Please show text content in regular text (not HTML text)
+                and limit to 15 characters with ...</span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B42. Header updates:</span></label>
+        <ul class="todo-list">
+            <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                        class="todo-list__label__description">B42a. Reduce the height of the
+                        header (and size of the share and settings icons if needed).&nbsp;</span></label></li>
+            <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                        class="todo-list__label__description">Please check the font of the
+                        header path - It should be the same font and size as the side menu.&nbsp;</span></label></li>
+            <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                        class="todo-list__label__description">Please move the header path to
+                        the left</span></label></li>
+            <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                        class="todo-list__label__description">Please delete the members text
+                        and leave just the number next to the avatars</span></label></li>
+        </ul>
+    </li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B44. Issue B28 is still not fixed for secondary circles. For
+                example, when I click Circle Template 1 in Commons, the side menu closes.</span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B45. Please fix the color blue as shown. The size of the button
+                is also too high<img src="https://api.shala.us/assets/images/circles/1673593779.png"></span></label>
+    </li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">B46. When I add a new circle, the side menu closes. Please fix.
+                The side menu should not close and the new circle must be added to show the user where the circle was
+                created.</span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span
+                class="todo-list__label__description">B47. When I add a new circle, the&nbsp;settings panel must be
+                open by default</span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span
+                class="todo-list__label__description">B48. With certain circles (such as the one in this example), the
+                settings panel will not open. The app crashes.<br>Can you please check?<br><a
+                    href="https://www.awesomescreenshot.com/video/14084445?key=955ca5aa49b0defe18bce8ee23d76b60">https://www.awesomescreenshot.com/video/14084445?key=955ca5aa49b0defe18bce8ee23d76b60</a><br><br>&nbsp;</span></label>
+    </li>
+</ul>
+<h4 class="shala-mf-page-editor_ck-heading3">C. Create New Circle - Templates</h4>
+<ul class="todo-list">
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span
+                class="todo-list__label__description">C1. <strong>FRONTEND</strong>: When user clicks add new circle,
+                please introduce an intermediate pop up screen that asks user to choose a workspace type, and then
+                proceed with a blank template or another template.&nbsp;<br>Figma file: <a
+                    href="https://www.figma.com/file/52P8noa5knbxPWTHAbhspi/UI%3A-SHALA?node-id=4771%3A73715&amp;t=7C8Q3qpGSCvKdf4H-1">https://www.figma.com/file/52P8
+                    noa5knbxPWTHAbhspi/UI%3A-SHALA?node-id=4771%3A73715&amp;t=7C8Q3qpGSCvKdf4H-1</a></span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">C2. <strong>BACKEND </strong>- Add a new table called
+                circles_templates. This table will have the following fields</span></label>
+        <ul class="todo-list">
+            <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span
+                        class="todo-list__label__description"><strong>C2a.
+                            circles_templatesId</strong><br>Int(11)<br><i>This uniquely identifies the
+                            circle_templateId</i></span></label></li>
+            <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span
+                        class="todo-list__label__description"><strong>C2b.
+                            microserviceId</strong><br>int(11)<br><i>This identifies the microservice that the template
+                            is connected to (for example, page editor, program panel etc)</i></span></label></li>
+            <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span
+                        class="todo-list__label__description"><strong>C2c. circleId</strong><br>int(11)<br>This
+                        identifies the circle that can be used as a template. When user selects this when creating a new
+                        circle, the settings and contents are copied to the new circle.</span></label></li>
+            <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span
+                        class="todo-list__label__description"><strong>C2d. userId</strong><br>int(11)<br>This
+                        identifies the user that added this circle as a template</span></label></li>
+            <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span
+                        class="todo-list__label__description"><strong>C2e. created_at</strong><br>datetime<br>Date and
+                        time when this entry was created</span></label></li>
+            <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span
+                        class="todo-list__label__description"><strong>C2f. deleted_at</strong><br>datetime<br>Date and
+                        time when this entry was deleted</span></label></li>
+        </ul>
+    </li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">C3. In C1, when user navigates through templates, show the
+                circles as lined in the table circles_templates. When user selects a template and creates a circle,
+                please copy all settings and content to the new circle.</span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">C4. Add a GET API for progress on the users_content for a given
+                contentId with assigned_at NOT NULL with a response of&nbsp;<br>completed: number;<br>total:
+                number;<br>dueDate: string;<br>doneDate: string;</span></label>
+        <ul class="todo-list">
+            <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                        class="todo-list__label__description">C5. Add a POST API for
+                        users_content to mark as done or mark as undone by userId<br>&nbsp;</span></label></li>
+        </ul>
+    </li>
+</ul>
+<h4 class="shala-mf-page-editor_ck-heading3">D. Fileview/Feature Switcher</h4>
+<ul class="todo-list">
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">D1. Add Feature/Fileview switcher for users who are
+                owners/admins/creators&nbsp;<br>For users who are owners, admins or creators of a circle, show the
+                switcher on the left of settings icon<br>This will allow users to switch between feature view and
+                content browser (fileview). When selecting feature view, they will view the circle using micorservice
+                content-browser. Please work with Max on this.</span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">D2. Please move the fileview/feature switcher to the right next
+                to the settings panel</span></label></li>
+    <li><label class="todo-list__label"><input type="checkbox" disabled="disabled" checked="checked"><span
+                class="todo-list__label__description">D3. Do not show the fileview/feature switcher to members of a
+                circle. It should only be shown to owners, admins or creators (see D1)<br><br>&nbsp;</span></label></li>
+</ul>
